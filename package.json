@@ -1,0 +1,57 @@
+{
+  "name": "bootswatchr",
+  "version": "5.0.0",
+  "description": "The Official BootSwatchr.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "parallelshell \"npm run start:server\" \"npm run start:webpack-dev\"",
+    "start:server": "node server.js",
+    "start:webpack-dev": "webpack --watch --progress --colors --config conf/webpack.config.js",
+    "build:prod": "webpack --config conf/webpack.config-prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstack/BootSwatchr.git"
+  },
+  "keywords": [
+    "BootSwatchr",
+    "Bootstrap"
+  ],
+  "author": "Drew Strickland <andrew.flagship@gmail.com> (http://drewstrickland.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dstack/BootSwatchr/issues"
+  },
+  "homepage": "https://github.com/dstack/BootSwatchr#readme",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "codemirror": "^5.10.0",
+    "css-loader": "^0.23.1",
+    "exports-loader": "^0.6.2",
+    "imports-loader": "^0.6.5",
+    "karma": "^0.13.19",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "lie": "^3.0.1",
+    "mocha": "^2.3.4",
+    "nib": "^1.1.0",
+    "parallelshell": "^2.0.0",
+    "phantomjs": "^1.9.19",
+    "riot": "^2.3.13",
+    "riotjs-loader": "^1.2.0",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.5.0",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1",
+    "whatwg-fetch": "^0.11.0"
+  },
+  "dependencies": {
+    "diet": "^0.9.29",
+    "diet-static": "^2.2.0",
+    "extend": "^3.0.0"
+  }
+}
