@@ -1,5 +1,11 @@
-<a name="5.0.10"></a>
-## [5.0.10](https://github.com/dstack/BootSwatchr/compare/5.0.10...v5.0.10) (2016-01-22)
+<a name="5.0.11"></a>
+## [5.0.11](https://github.com/dstack/BootSwatchr/compare/5.0.11...v5.0.11) (2016-01-22)
+
+
+
+
+<a name="5.0.11"></a>
+## [5.0.11](https://github.com/dstack/BootSwatchr/compare/5.0.10...5.0.11) (2016-01-22)
 
 
 
