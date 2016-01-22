@@ -8,7 +8,8 @@
       "_data/*",
       "_helpers/*",
       "_includes/*",
-      "_layouts/*"
+      "_layouts/*",
+      "_assets/**/*"
     ],
     "metalsmith-metadata": {},
     "metalsmith-in-place": {
@@ -23,6 +24,10 @@
       "directory": "./docs/_layouts",
       "partials": "./docs/_includes",
       "default": "default.html"
+    },
+    "metalsmith-assets": {
+      "source": "./docs/_assets",
+      "destination": "./assets"
     },
     "metalsmith-permalinks": {
       "pattern": ":section/:title"

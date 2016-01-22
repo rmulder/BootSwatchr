@@ -16,7 +16,9 @@ function plugin(options){
     setImmediate(done);
     var md = new MarkdownIt(options);
     Object.keys(files).forEach(function(file){
+      console.log('file is', file)
       if (!isMd(file)){
+        console.log('file is not md', file)
         return;
       }
       var data = files[file],

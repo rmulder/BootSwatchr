@@ -1,6 +1,6 @@
 {
   "name": "bootswatchr",
-  "version": "5.1.1",
+  "version": "5.0.11",
   "description": "The Official BootSwatchr.",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "build:prod": "webpack --config conf/webpack.config-prod.js",
     "docs:start": "parallelshell \"npm run docs:watch\" \"npm run docs:serve\"",
     "docs:clean": "rimraf _gh_pages/*",
-    "docs:gen": "npm run docs:clean && metalsmith --config conf/metalsmith.json",
+    "docs:gen": "metalsmith --config conf/metalsmith.json",
     "docs:watch": "watch \"npm run docs:gen\" docs",
     "docs:serve": "browser-sync start --port 3500 --files \"_gh_pages\" --server \"_gh_pages\"",
     "docs:changelog": "conventional-changelog -p angular -r 0 > docs/_includes/current-changelog.html && conventional-changelog -p angular -r 0 > CHANGELOG.md",
@@ -59,6 +59,7 @@
     "lie": "^3.0.1",
     "markdown-it": "^5.1.0",
     "metalsmith": "^2.1.0",
+    "metalsmith-assets": "^0.1.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-in-place": "^1.3.2",
     "metalsmith-layouts": "^1.4.2",
