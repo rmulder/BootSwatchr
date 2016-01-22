@@ -1,6 +1,20 @@
-<a name="5.1.1"></a>
-## [5.1.1](https://github.com/dstack/BootSwatchr/compare/5.1.1...v5.1.1) (2016-01-22)
+<a name="5.0.12"></a>
+## [5.0.12](https://github.com/dstack/BootSwatchr/compare/5.0.12...v5.0.12) (2016-01-22)
 
+
+
+
+<a name="5.0.12"></a>
+## [5.0.12](https://github.com/dstack/BootSwatchr/compare/5.1.1...5.0.12) (2016-01-22)
+
+
+### Bug Fixes
+
+* **$tooling:** added a proper template for docs ([9fda987](https://github.com/dstack/BootSwatchr/commit/9fda987))
+
+### Features
+
+* **$tooling:** Travis CI integration, basic ([3c2aa6c](https://github.com/dstack/BootSwatchr/commit/3c2aa6c))
 
 
 
