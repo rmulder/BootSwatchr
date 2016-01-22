@@ -6,4 +6,4 @@ How ya'll doin?
 
 How else?
 
-[/changelog](CHANGELOG)
+[CHANGELOG](/changelog)
