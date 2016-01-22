@@ -21,7 +21,8 @@
     "release": "release-it patch -c conf/release.json && npm run docs:publish && npm run ship",
     "release:minor": "release-it minor -c conf/release.json && npm run docs:publish && npm run ship",
     "release:major": "release-it major -c conf/release.json && npm run docs:publish && npm run ship",
-    "ship": "git push origin master --tags"
+    "ship": "git push origin master --tags",
+    "ci": "npm install && npm test"
   },
   "repository": {
     "type": "git",
