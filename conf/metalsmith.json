@@ -1,0 +1,31 @@
+{
+  "source": "./docs",
+  "destination": "./_gh_pages",
+  "clean": false,
+  "plugins": {
+    "metalsmith-ignore": [
+      "_plugins/*",
+      "_data/*",
+      "_helpers/*",
+      "_includes/*",
+      "_layouts/*"
+    ],
+    "metalsmith-metadata": {},
+    "metalsmith-in-place": {
+      "engine": "handlebars",
+      "partials": "./docs/_includes"
+    },
+    "./docs/_plugins/markdown.js": {
+      "html": true
+    },
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "directory": "./docs/_layouts",
+      "partials": "./docs/_includes",
+      "default": "default.html"
+    },
+    "metalsmith-permalinks": {
+      "pattern": ":section/:title"
+    }
+  }
+}

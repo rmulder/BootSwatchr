@@ -1,14 +1,21 @@
 var diet = require('diet'),
-  conf = require('./lib/conf'),
-  publicStatic = require('diet-static')({ path: __dirname+'/public' })
+  conf = require('./lib/conf');
 
 var app = diet(),
-  listenOn = conf.listenHost != ''? conf.listenHost + ':' + conf.listenPort : conf.listenPort;
+  listenOn = conf.__fullHost
 
 app.listen(listenOn)
 
-app.get('/', function($){
-  $.redirect('/index.html');
-});
 
-app.footer(publicStatic);
+app.get('/api/status', function($){
+  $.end('STATUS: OK! BUTTS 2');
+})
+
+if(conf.useStaticServer){
+  app.get('/', function($){
+    $.redirect('/index.html');
+  });
+
+  publicStatic = require('diet-static')({ path: __dirname+'/public' });
+  app.footer(publicStatic);
+}

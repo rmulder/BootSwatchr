@@ -1,0 +1,3 @@
+{
+  "ignore": ["test/*", "lib/client/*", "public/*", "package.json"]
+}

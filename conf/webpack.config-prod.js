@@ -2,8 +2,11 @@ process.env.BOOTSWATCHR_ENV = 'prod';
 
 
 
-var webpackConf = require('./webpack.config.js');
+var webpack = require('webpack'),
+  webpackConf = require('./webpack.config.js');
 
 
 
 webpackConf.plugins.push(new webpack.optimize.UglifyJsPlugin({minimize: true}));
+
+module.exports = webpackConf;
