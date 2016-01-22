@@ -8,7 +8,7 @@ We use the fork strategy to help isolate changes.  Anyone can create a fork of t
 
 ## Step 2: Write some code
 
-Get to hackin'.
+Get to hackin'.  We use commitizen for commit messages, although you don't need to worry too much about these because we will manually merge your branch.
 
 ## Step 3: Issue a Pull Request
 
