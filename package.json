@@ -44,6 +44,7 @@
     "codemirror": "^5.10.0",
     "commitizen": "^2.5.0",
     "css-loader": "^0.23.1",
+    "cz-conventional-changelog": "^1.1.5",
     "exports-loader": "^0.6.2",
     "handlebars": "^4.0.5",
     "imports-loader": "^0.6.5",
@@ -80,5 +81,10 @@
     "diet": "^0.9.29",
     "diet-static": "^2.2.0",
     "extend": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
