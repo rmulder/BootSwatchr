@@ -1,6 +1,18 @@
-<a name="5.0.9"></a>
-## 5.0.9 (2016-01-22)
+<a name="5.0.10"></a>
+## 5.0.10 (2016-01-22)
 
+
+
+
+<a name="5.0.10"></a>
+## 5.0.10 (2016-01-22)
+
+
+### chore
+
+* chore: updated changelog for docs ([22c612c](https://github.com/dstack/BootSwatchr/commit/22c612c))
+
+* Release 5.0.10 ([44b1360](https://github.com/dstack/BootSwatchr/commit/44b1360))
 
 
 
