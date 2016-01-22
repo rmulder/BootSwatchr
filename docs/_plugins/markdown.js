@@ -4,7 +4,7 @@ var path = require('path'),
   extname = path.extname,
   MarkdownIt = require('markdown-it');
 
-function markdown(file){
+function isMd(file){
   return /\.md|\.markdown/.test(extname(file));
 }
 
@@ -16,11 +16,15 @@ function plugin(options){
     setImmediate(done);
     var md = new MarkdownIt(options);
     Object.keys(files).forEach(function(file){
-      if (!markdown(file)) return;
-      var data = files[file];
-      var dir = dirname(file);
-      var html = basename(file, extname(file)) + '.html';
-      if ('.' != dir) html = dir + '/' + html;
+      if (!isMd(file)){
+        return;
+      }
+      var data = files[file],
+        dir = dirname(file),
+        html = basename(file, extname(file)) + '.html';
+      if ('.' != dir){
+        html = dir + '/' + html;
+      }
 
       var str = md.render(data.contents.toString());
       data.contents = new Buffer(str);

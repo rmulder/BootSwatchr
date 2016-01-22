@@ -1,6 +1,6 @@
 {
   "name": "bootswatchr",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "The Official BootSwatchr.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,9 @@
     "docs:gen": "npm run docs:clean && metalsmith --config conf/metalsmith.json",
     "docs:watch": "watch \"npm run docs:gen\" docs",
     "docs:serve": "browser-sync start --port 3500 --files \"_gh_pages\" --server \"_gh_pages\"",
-    "docs:publish": "npm run docs:gen && git checkout gh-pages && git add -f _gh_pages && git commit --no-verify -m \"updated docs (gh-pages)\" && git filter-branch --subdirectory-filter _gh_pages/ -f && git push origin gh-pages -f && git checkout master"
+    "docs:changelog": "conventional-changelog > docs/_includes/current-changelog.html && conventional-changelog > CHANGELOG.md",
+    "docs:publish": "npm run docs:changelog && npm run docs:gen && git checkout gh-pages && git add -f _gh_pages && git commit --no-verify -m \"updated docs (gh-pages)\" && git filter-branch --subdirectory-filter _gh_pages/ -f && git push origin gh-pages -f && git checkout master",
+    "release": "release-it -c conf/release.json && npm run docs:publish && git push origin master --tags"
   },
   "repository": {
     "type": "git",
