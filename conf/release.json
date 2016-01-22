@@ -1,0 +1,11 @@
+{
+  "non-interactive": true,
+  "dry-run": false,
+  "src":{
+    "pushRepo": true,
+    "afterReleaseCommand": "npm run docs:publish"
+  },
+  "npm": {
+    "publish": false
+  }
+}
