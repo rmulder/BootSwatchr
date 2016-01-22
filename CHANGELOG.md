@@ -4,10 +4,12 @@
 
 ### chore
 
+* chore: updated changelog for docs ([49e686b](https://github.com/dstack/BootSwatchr/commit/49e686b))
 * chore: updated changelog for docs ([99a60e1](https://github.com/dstack/BootSwatchr/commit/99a60e1))
 * chore: updated changelog for docs ([abc6f4f](https://github.com/dstack/BootSwatchr/commit/abc6f4f))
 * chore: updated changelog for docs ([a27a68f](https://github.com/dstack/BootSwatchr/commit/a27a68f))
 
+* Release 5.0.6 ([53023f6](https://github.com/dstack/BootSwatchr/commit/53023f6))
 * Release 5.0.6 ([6942f94](https://github.com/dstack/BootSwatchr/commit/6942f94))
 * Release 5.0.6 ([0adbc24](https://github.com/dstack/BootSwatchr/commit/0adbc24))
 * Release 5.0.6 ([e8613e5](https://github.com/dstack/BootSwatchr/commit/e8613e5))
